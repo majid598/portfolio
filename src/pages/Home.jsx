@@ -375,7 +375,7 @@ const Home = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/" target="_blank" className="icon brands fa-facebook-f">
+                  <a href="https://www.facebook.com/profile.php?id=61553142673447" target="_blank" className="icon brands fa-facebook-f">
                     <span className="label">Facebook</span>
                   </a>
                 </li>
