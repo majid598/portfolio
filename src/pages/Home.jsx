@@ -5,8 +5,10 @@ import axios from "axios";
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css";
+import Loader from "../Components/Loader";
 
 const Home = () => {
+  const [loading, setLoading] = useState(false);
   const [contact, setContact] = useState({
     name: "",
     email: "",
@@ -15,10 +17,12 @@ const Home = () => {
   });
 
   const submitHandler = async (e) => {
+    setLoading(true);
     e.preventDefault();
     await axios
       .post("https://contactform-1-ty1w.onrender.com/api/auth/contact", contact)
       .then(({ data }) => {
+        setLoading(false);
         toast.success(data?.message);
         setContact({
           name: "",
@@ -27,7 +31,10 @@ const Home = () => {
           message: "",
         });
       })
-      .catch((err) => toast.error(err?.data?.message));
+      .catch((err) => {
+        setLoading(false);
+        toast.error(err?.data?.message);
+      });
   };
 
   const changeHandler = (e) => {
@@ -45,7 +52,8 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="relative">
+      {loading && <Loader />}
       <Header />
       <article id="top" className="wrapper style1">
         <div className="container">
