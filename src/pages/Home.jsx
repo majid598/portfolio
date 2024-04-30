@@ -260,15 +260,22 @@ const Home = () => {
             </div>
             <div className="col-4 col-6-medium col-12-small">
               <article className="box style2">
-                <a target="_blank" href="#" className="image featured">
-                  <img src="/assets/images/pic06.jpg" alt="" />
+                <a target="_blank" href="https://sherryjswebsite.netlify.app/" className="image featured">
+                  <img
+                    src="/assets/images/sherry.png"
+                    className="w-full h-72"
+                    alt=""
+                  />
                 </a>
                 <h3>
-                  <a target="_blank" href="#">
-                    Sed amet ornare
+                  <a target="_blank" href="https://sherryjswebsite.netlify.app/">
+                    Animated-Website
                   </a>
                 </h3>
-                <p>Ornare nulla proin odio consequat.</p>
+                <p className="leading-5 tracking-tighter">
+                  Animated website built with Sherry.js, featuring captivating
+                  visuals and interactive elements for an immersive experience.
+                </p>
               </article>
             </div>
           </div>
@@ -363,18 +370,18 @@ const Home = () => {
               <h3>Find me on ...</h3>
               <ul className="social">
                 <li>
-                  <a href="#" className="icon brands fa-twitter">
+                  <a href="#" target="_blank" className="icon brands fa-twitter">
                     <span className="label">Twitter</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="icon brands fa-facebook-f">
+                  <a href="https://www.facebook.com/" target="_blank" className="icon brands fa-facebook-f">
                     <span className="label">Facebook</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="icon brands fa-linkedin-in">
+                  <a href="https://www.linkedin.com/in/majid-ali-0331302b2/" target="_blank" className="icon brands fa-linkedin-in">
                     <span className="label">LinkedIn</span>
                   </a>
                 </li>
