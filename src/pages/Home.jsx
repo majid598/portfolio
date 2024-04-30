@@ -84,31 +84,66 @@ const Home = () => {
           <div className="row aln-center">
             <div className="col-4 col-6-medium col-12-small">
               <section className="box style1">
-                <span className="icon featured fa-comments"></span>
+                <div>
+                  <img
+                    src="/assets/images/react.png"
+                    className="w-20 mx-auto"
+                    alt=""
+                  />
+                </div>
                 <h3>React</h3>
-                <p>
-                  Ornare nulla proin odio consequat sapien vestibulum ipsum
-                  primis sed amet consequat lorem dolore.
+                <p className="leading-5 tracking-tighter">
+                  Proficient in React, I specialize in building dynamic and
+                  responsive web applications. With a solid understanding of
+                  state management, component lifecycle, and JSX syntax, I
+                  leverage React's powerful capabilities to create seamless user
+                  interfaces and optimize performance. Experienced in
+                  integrating React with various libraries and frameworks, I
+                  strive to deliver efficient and scalable solutions tailored to
+                  meet diverse project requirements.
                 </p>
               </section>
             </div>
             <div className="col-4 col-6-medium col-12-small">
               <section className="box style1">
-                <span className="icon solid featured fa-camera-retro"></span>
+                <div>
+                  <img
+                    src="/assets/images/node.png"
+                    className="w-20 mx-auto"
+                    alt=""
+                  />
+                </div>
                 <h3>Node js</h3>
-                <p>
-                  Ornare nulla proin odio consequat sapien vestibulum ipsum
-                  primis sed amet consequat lorem dolore.
+                <p className="leading-5 tracking-tighter">
+                  Skilled in Node.js, I excel in developing robust and scalable
+                  server-side applications. Leveraging Node.js's event-driven
+                  architecture and non-blocking I/O model, I specialize in
+                  building high-performance APIs and backend services. With
+                  expertise in asynchronous programming and package management
+                  using npm, I ensure efficient and reliable server-side
+                  solutions tailored to meet project objectives.
                 </p>
               </section>
             </div>
             <div className="col-4 col-6-medium col-12-small">
               <section className="box style1">
-                <span className="icon featured fa-thumbs-up"></span>
+                <div>
+                  <img
+                    src="/assets/images/next.png"
+                    className="w-20 mx-auto"
+                    alt=""
+                  />
+                </div>
                 <h3>Next js</h3>
-                <p>
-                  Ornare nulla proin odio consequat sapien vestibulum ipsum
-                  primis sed amet consequat lorem dolore.
+                <p className="leading-5 tracking-tighter">
+                  Proficient in Next.js, I specialize in building fast,
+                  server-side rendered React applications. With Next.js's
+                  powerful features such as automatic code splitting,
+                  server-side rendering, and static site generation, I deliver
+                  efficient and SEO-friendly web applications. Leveraging
+                  Next.js's dynamic routing and API routes, I create seamless
+                  user experiences and optimize performance for modern web
+                  applications.
                 </p>
               </section>
             </div>
@@ -260,7 +295,11 @@ const Home = () => {
             </div>
             <div className="col-4 col-6-medium col-12-small">
               <article className="box style2">
-                <a target="_blank" href="https://sherryjswebsite.netlify.app/" className="image featured">
+                <a
+                  target="_blank"
+                  href="https://sherryjswebsite.netlify.app/"
+                  className="image featured"
+                >
                   <img
                     src="/assets/images/sherry.png"
                     className="w-full h-72"
@@ -268,7 +307,10 @@ const Home = () => {
                   />
                 </a>
                 <h3>
-                  <a target="_blank" href="https://sherryjswebsite.netlify.app/">
+                  <a
+                    target="_blank"
+                    href="https://sherryjswebsite.netlify.app/"
+                  >
                     Animated-Website
                   </a>
                 </h3>
@@ -370,18 +412,30 @@ const Home = () => {
               <h3>Find me on ...</h3>
               <ul className="social">
                 <li>
-                  <a href="#" target="_blank" className="icon brands fa-twitter">
+                  <a
+                    href="#"
+                    target="_blank"
+                    className="icon brands fa-twitter"
+                  >
                     <span className="label">Twitter</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/profile.php?id=61553142673447" target="_blank" className="icon brands fa-facebook-f">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61553142673447"
+                    target="_blank"
+                    className="icon brands fa-facebook-f"
+                  >
                     <span className="label">Facebook</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://www.linkedin.com/in/majid-ali-0331302b2/" target="_blank" className="icon brands fa-linkedin-in">
+                  <a
+                    href="https://www.linkedin.com/in/majid-ali-0331302b2/"
+                    target="_blank"
+                    className="icon brands fa-linkedin-in"
+                  >
                     <span className="label">LinkedIn</span>
                   </a>
                 </li>
