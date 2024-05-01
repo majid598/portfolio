@@ -116,7 +116,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-4 col-5-large col-12-medium">
-              <div className="w-80 h-80 rounded-full overflow-hidden">
+              <div className="w-80 h-80 rounded-full lg:mx-0 md:mx-0 mx-auto overflow-hidden">
                 <img src="/assets/images/pfl.jpg" alt="" />
               </div>
             </div>
