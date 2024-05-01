@@ -51,6 +51,63 @@ const Home = () => {
     }
   };
 
+  const works = [
+    {
+      image: "/assets/images/react.png",
+      name: "React",
+      desc: "Proficient in React, I specialize in building dynamic and responsive web applications. With a solid understanding of state management, component lifecycle, and JSX syntax, I leverage React's powerful capabilities to create seamless user interfaces and optimize performance. Experienced in integrating React with various libraries and frameworks, I strive to deliver efficient and scalable solutions tailored to meet diverse project requirements.",
+    },
+    {
+      image: "/assets/images/node.png",
+      name: "Node js",
+      desc: "Skilled in Node.js, I excel in developing robust and scalable server-side applications. Leveraging Node.js's event-driven architecture and non-blocking I/O model, I specialize in building high-performance APIs and backend services. With expertise in asynchronous programming and package management using npm, I ensure efficient and reliable server-side solutions tailored to meet project objectives.",
+    },
+    {
+      image: "/assets/images/next.png",
+      name: "Next js",
+      desc: "Proficient in Next.js, I specialize in building fast, server-side rendered React applications. With Next.js's powerful features such as automatic code splitting, server-side rendering, and static site generation, I deliver efficient and SEO-friendly web applications. Leveraging Next.js's dynamic routing and API routes, I create seamless user experiences and optimize performance for modern web applications.",
+    },
+  ];
+
+  const projects = [
+    {
+      image: "/assets/images/e.png",
+      title: "E-commerce Website",
+      link: "https://fashionista-mocha.vercel.app",
+      desc: "An immersive MERN stack e-commerce website showcasing products and providing seamless shopping experiences.",
+    },
+    {
+      image: "/assets/images/insta.jpg",
+      title: "Instagram-Clone",
+      link: "https://github.com/majid598/Instagram-Clone",
+      desc: "A feature-rich Instagram clone offering social networking functionalities for sharing photos and connecting with friends.",
+    },
+    {
+      image: "/assets/images/spotify.jpg",
+      title: "Spotify-Clone",
+      link: "https://github.com/majid598/Spotify-Clone",
+      desc: "A MERN stack Spotify clone delivering personalized music streaming experiences with a vast library of songs and playlists",
+    },
+    {
+      image: "/assets/images/net.jpg",
+      title: "Netflix-Clone",
+      link: "#",
+      desc: "A MERN stack Netflix clone offering a vast collection of movies and TV shows for seamless streaming and entertainment.",
+    },
+    {
+      image: "/assets/images/p4.jpg",
+      title: "Food-Website",
+      link: "#",
+      desc: "Fast food website offering interactive menu, online ordering, and delivery for convenient dining.",
+    },
+    {
+      image: "/assets/images/sherry.png",
+      title: "Animated-Website",
+      link: "https://sherryjswebsite.netlify.app/",
+      desc: "Animated website built with Sherry.js, featuring captivating visuals and interactive elements for an immersive experience.",
+    },
+  ];
+
   return (
     <div className="relative">
       {loading && <Loader />}
@@ -87,74 +144,23 @@ const Home = () => {
         <div className="container">
           <header>
             <h2>Here's all the stuff I do.</h2>
-            <p>Odio turpis amet sed consequat eget posuere consequat.</p>
+            <p className="lg:px-40 md:px-20">
+              I specialize in full-stack web development using React, Next.js,
+              and Node.js to create dynamic and scalable applications.
+            </p>
           </header>
           <div className="row aln-center">
-            <div className="col-4 col-6-medium col-12-small">
-              <section className="box style1">
-                <div>
-                  <img
-                    src="/assets/images/react.png"
-                    className="w-20 mx-auto"
-                    alt=""
-                  />
-                </div>
-                <h3>React</h3>
-                <p className="leading-5 tracking-tighter">
-                  Proficient in React, I specialize in building dynamic and
-                  responsive web applications. With a solid understanding of
-                  state management, component lifecycle, and JSX syntax, I
-                  leverage React's powerful capabilities to create seamless user
-                  interfaces and optimize performance. Experienced in
-                  integrating React with various libraries and frameworks, I
-                  strive to deliver efficient and scalable solutions tailored to
-                  meet diverse project requirements.
-                </p>
-              </section>
-            </div>
-            <div className="col-4 col-6-medium col-12-small">
-              <section className="box style1">
-                <div>
-                  <img
-                    src="/assets/images/node.png"
-                    className="w-20 mx-auto"
-                    alt=""
-                  />
-                </div>
-                <h3>Node js</h3>
-                <p className="leading-5 tracking-tighter">
-                  Skilled in Node.js, I excel in developing robust and scalable
-                  server-side applications. Leveraging Node.js's event-driven
-                  architecture and non-blocking I/O model, I specialize in
-                  building high-performance APIs and backend services. With
-                  expertise in asynchronous programming and package management
-                  using npm, I ensure efficient and reliable server-side
-                  solutions tailored to meet project objectives.
-                </p>
-              </section>
-            </div>
-            <div className="col-4 col-6-medium col-12-small">
-              <section className="box style1">
-                <div>
-                  <img
-                    src="/assets/images/next.png"
-                    className="w-20 mx-auto"
-                    alt=""
-                  />
-                </div>
-                <h3>Next js</h3>
-                <p className="leading-5 tracking-tighter">
-                  Proficient in Next.js, I specialize in building fast,
-                  server-side rendered React applications. With Next.js's
-                  powerful features such as automatic code splitting,
-                  server-side rendering, and static site generation, I deliver
-                  efficient and SEO-friendly web applications. Leveraging
-                  Next.js's dynamic routing and API routes, I create seamless
-                  user experiences and optimize performance for modern web
-                  applications.
-                </p>
-              </section>
-            </div>
+            {works.map((work) => (
+              <div key={work.name} className="col-4 col-6-medium col-12-small">
+                <section className="box style1">
+                  <div>
+                    <img src={work.image} className="w-20 mx-auto" alt="" />
+                  </div>
+                  <h3>{work.name}</h3>
+                  <p className="leading-5 tracking-tighter">{work.desc}</p>
+                </section>
+              </div>
+            ))}
           </div>
           <footer>
             <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
@@ -173,161 +179,33 @@ const Home = () => {
           <header>
             <h2>Here&apos;s some stuff I made recently.</h2>
             <p>
-              Proin odio consequat sapien vestibulum consequat lorem dolore
-              feugiat.
+              Here is all those websites those I have made with react, node.js,
+              next.js and other technologies.
             </p>
           </header>
           <div className="row">
-            <div className="col-4 col-6-medium col-12-small">
-              <article className="box style2">
-                <a
-                  href="https://fashionista-mocha.vercel.app"
-                  target="_blank"
-                  className="image featured"
-                >
-                  <img
-                    src="/assets/images/e.png"
-                    className="w-full h-72"
-                    alt=""
-                  />
-                </a>
-                <h3>
+            {projects.map((project) => (
+              <div
+                key={project.title}
+                className="col-4 col-6-medium col-12-small"
+              >
+                <article className="box style2">
                   <a
                     target="_blank"
-                    href="https://fashionista-mocha.vercel.app"
+                    href={project.link}
+                    className="image featured"
                   >
-                    E-commerce Website
+                    <img src={project.image} className="w-full h-72" alt="" />
                   </a>
-                </h3>
-                <p className="leading-5 tracking-tighter">
-                  An immersive MERN stack e-commerce website showcasing products
-                  and providing seamless shopping experiences.
-                </p>
-              </article>
-            </div>
-            <div className="col-4 col-6-medium col-12-small">
-              <article className="box style2">
-                <a
-                  target="_blank"
-                  href="https://github.com/majid598/Instagram-Clone"
-                  className="image featured"
-                >
-                  <img
-                    src="/assets/images/insta.jpg"
-                    className="w-full h-72"
-                    alt=""
-                  />
-                </a>
-                <h3>
-                  <a
-                    target="_blank"
-                    href="https://github.com/majid598/Instagram-Clone"
-                  >
-                    Instagram-Clone
-                  </a>
-                </h3>
-                <p className="leading-5 tracking-tighter">
-                  A feature-rich Instagram clone offering social networking
-                  functionalities for sharing photos and connecting with
-                  friends.
-                </p>
-              </article>
-            </div>
-            <div className="col-4 col-6-medium col-12-small">
-              <article className="box style2">
-                <a
-                  target="_blank"
-                  href="https://github.com/majid598/Spotify-Clone"
-                  className="image featured"
-                >
-                  <img
-                    src="/assets/images/spotify.jpg"
-                    className="w-full h-72"
-                    alt=""
-                  />
-                </a>
-                <h3>
-                  <a
-                    target="_blank"
-                    href="https://github.com/majid598/Spotify-Clone"
-                  >
-                    Spotify-Clone
-                  </a>
-                </h3>
-                <p className="leading-5 tracking-tighter">
-                  A MERN stack Spotify clone delivering personalized music
-                  streaming experiences with a vast library of songs and
-                  playlists.
-                </p>
-              </article>
-            </div>
-            <div className="col-4 col-6-medium col-12-small">
-              <article className="box style2">
-                <a target="_blank" href="#" className="image featured">
-                  <img
-                    src="/assets/images/net.jpg"
-                    className="w-full h-72"
-                    alt=""
-                  />
-                </a>
-                <h3>
-                  <a target="_blank" href="#">
-                    Netflix-Clone
-                  </a>
-                </h3>
-                <p className="leading-5 tracking-tighter">
-                  A MERN stack Netflix clone offering a vast collection of
-                  movies and TV shows for seamless streaming and entertainment.
-                </p>
-              </article>
-            </div>
-            <div className="col-4 col-6-medium col-12-small">
-              <article className="box style2">
-                <a target="_blank" href="#" className="image featured">
-                  <img
-                    src="/assets/images/p4.jpg"
-                    className="w-full h-72"
-                    alt=""
-                  />
-                </a>
-                <h3>
-                  <a target="_blank" href="#">
-                    Food-Website
-                  </a>
-                </h3>
-                <p className="leading-5 tracking-tighter">
-                  Fast food website offering interactive menu, online ordering,
-                  and delivery for convenient dining.
-                </p>
-              </article>
-            </div>
-            <div className="col-4 col-6-medium col-12-small">
-              <article className="box style2">
-                <a
-                  target="_blank"
-                  href="https://sherryjswebsite.netlify.app/"
-                  className="image featured"
-                >
-                  <img
-                    src="/assets/images/sherry.png"
-                    className="w-full h-72"
-                    alt=""
-                  />
-                </a>
-                <h3>
-                  <a
-                    target="_blank"
-                    href="https://sherryjswebsite.netlify.app/"
-                  >
-                    Animated-Website
-                  </a>
-                </h3>
-                <p className="leading-5 tracking-tighter">
-                  Animated website built with Sherry.js, featuring captivating
-                  visuals and interactive elements for an immersive experience.
-                </p>
-              </article>
-            </div>
+                  <h3>
+                    <a target="_blank" href={project.link}>
+                      {project.title}
+                    </a>
+                  </h3>
+                  <p className="leading-5 tracking-tighter">{project.desc}</p>
+                </article>
+              </div>
+            ))}
           </div>
           <footer>
             <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
@@ -345,7 +223,7 @@ const Home = () => {
         <div className="container medium">
           <header>
             <h2>Have me make stuff for you.</h2>
-            <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
+            <p>If You have any question you can get in touch with me.</p>
           </header>
           <div className="row">
             <div className="col-12">
@@ -433,6 +311,15 @@ const Home = () => {
                     href="https://www.facebook.com/profile.php?id=61553142673447"
                     target="_blank"
                     className="icon brands fa-facebook-f"
+                  >
+                    <span className="label">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/code_with_raju01/"
+                    target="_blank"
+                    className="icon brands fa-instagram"
                   >
                     <span className="label">Facebook</span>
                   </a>
