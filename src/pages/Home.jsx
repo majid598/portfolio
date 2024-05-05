@@ -97,7 +97,7 @@ const Home = () => {
     {
       image: "/assets/images/p4.jpg",
       title: "Food-Website",
-      link: "#",
+      link: "https://burgerpizzapoint.vercel.app/",
       desc: "Fast food website offering interactive menu, online ordering, and delivery for convenient dining.",
     },
     {
