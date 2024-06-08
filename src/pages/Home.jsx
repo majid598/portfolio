@@ -79,7 +79,7 @@ const Home = () => {
     {
       image: "/assets/images/insta.jpg",
       title: "Instagram-Clone",
-      link: "https://github.com/majid598/Instagram-Clone",
+      link: "https://instagram-clone-eight-lovat.vercel.app/",
       desc: "A feature-rich Instagram clone offering social networking functionalities for sharing photos and connecting with friends.",
     },
     {
