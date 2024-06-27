@@ -14,7 +14,7 @@ export const projects = [
   {
     image: "/assets/images/spotify.jpg",
     title: "Spotify-Clone",
-    link: "https://github.com/majid598/Spotify-Clone",
+    link: "https://spotify-clone-gamma-coral.vercel.app/",
     desc: "A MERN stack Spotify clone delivering personalized music streaming experiences with a vast library of songs and playlists",
   },
   {
