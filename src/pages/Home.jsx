@@ -52,10 +52,8 @@ const Home = () => {
     }
   };
 
-
-
   return (
-    <div className="relative">
+    <div className={`relative`}>
       {loading && <Loader />}
       <Header />
       <article id="top" className="wrapper style1">

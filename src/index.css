@@ -2569,3 +2569,36 @@ body > article {
 .grid-cols-2 {
   grid-template-columns: 25% 75%;
 }
+
+
+.three-dots-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust as needed */
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: #000; /* Adjust dot color */
+  border-radius: 50%;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+    transform: scale(1);
+  }
+}
