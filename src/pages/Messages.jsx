@@ -5,7 +5,7 @@ import "react-toastify/ReactToastify.css";
 
 const Messages = () => {
   const [isOwner, setIsOwner] = useState(false);
-  const [key, setKey] = useState("");
+  const [key, setKey] = useState("w147-xjm9-zq87-92s6-89ev");
   const [messages, setMessages] = useState([null]);
   const myKey = "code_with_raju";
 
