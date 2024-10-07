@@ -72,6 +72,96 @@ const Home = () => {
               </header>
               <p>
                 Web <strong>Developer</strong> and an Enthusiastic Coder
+                .playerProfileDefault[_ngcontent-app-root-c21]{
+background: #008000
+}
+
+.playing-batsmen-wrapper[_ngcontent-app-root-c24] .ptnr-info[_ngcontent-app-root-c24]{
+	display: none;
+}
+.playing-batsmen-wrapper[_ngcontent-app-root-c24] .batsmen-partnership[_ngcontent-app-root-c24]:nth-child(3){
+border-right: 0px solid rgba(var(--ce_low_contrast_fg_rgb),.5);
+}
+
+.playing-batsmen-wrapper[_ngcontent-app-root-c24] .batsmen-partnership[_ngcontent-app-root-c24] .batsmen-info-wrapper[_ngcontent-app-root-c24] {
+    margin-left: 1.25em;
+    margin-top: 1em;
+    display: none;
+}
+
+.playerProfileDefault[_ngcontent-app-root-c21] {
+    position: absolute;
+}
+
+.playing-batsmen-wrapper[_ngcontent-app-root-c24]{
+	display:inline-grid;
+}
+
+.playing-batsmen-wrapper[_ngcontent-app-root-c24] .batsmen-partnership[_ngcontent-app-root-c24] .bowler[_ngcontent-app-root-c24]{
+	display:inline-grid;
+}
+
+
+
+
+.playing-batsmen-wrapper[_ngcontent-app-root-c24] {
+    display: grid;
+    align-items: center;
+    padding-bottom: 114em;
+    padding-top: 32px;
+    border-bottom: 1px solid rgba(36,48,61,.5);
+    justify-content: space-between;
+}
+
+
+
+
+.playing-batsmen-wrapper[_ngcontent-app-root-c24] .batsmen-partnership[_ngcontent-app-root-c24]:nth-child(3) {
+        padding-top: 9em;
+}
+
+.playing-batsmen-wrapper[_ngcontent-app-root-c24] .batsmen-partnership[_ngcontent-app-root-c24]:last-child {
+        padding-top: 15em;
+}
+
+.comm-wrap[_ngcontent-app-root-c28] {
+    display: none;
+    flex-direction: column;
+    padding-top: 107em;
+}
+
+
+
+.playerProfileDefault[_ngcontent-app-root-c21] {
+    width: 24em;
+}
+
+
+
+.playerProfileDefault[_ngcontent-app-root-c21] .mr-top[_ngcontent-app-root-c21] {
+    margin-top: -2.5em;
+width: 155em;
+}
+
+.ads-wrapper-r[_ngcontent-app-root-c26] {
+    display: none;
+}
+
+.ads-wrapper-l[_ngcontent-app-root-c26] {
+        display: none;
+}
+
+.ads-wrapper-set[_ngcontent-app-root-c26] {
+    display: none;
+}
+
+.b-footer[_ngcontent-app-root-c12] {
+    width: 100%;
+    height: auto;
+    background: #131e29;
+    display: none;
+}
+
               </p>
               <a
                 onClick={() => smoothScrollTo("work")}
